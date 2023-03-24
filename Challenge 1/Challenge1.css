@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    --color-1: #c5c5c5;
+    --color-2: #8132a3;
+    --color-3: #eeeeee;
+    --color-4: #ffffff;
+    --color-5: #000000;
+}
+
+body {
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    background-color: #8132a3;
+    border-radius: 5px;
+}
+.card {
+    width: 250px;
+    background-color: var(--color-4);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-end-end-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.card img {
+    border-radius: 50%;
+}
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.profile-pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 5px solid #ffffff;
+}
+.card label:not(:first-of-type) {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    border-top: 1px solid #c5c5c5;
+    padding-top: 5px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
